@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+    
+<div class="container">
+    <div class="calculator">
+  
+      <form>
+        <div class="world">
+          <input type="text" name="world">
+        </div>
+        
+        <div>
+          <input type="button" value="Ac" onclick="world.value = '' " class="operator">
+          <input type="button" value="De" onclick="world.value = world.value.toString().slice(0,-1)" class="operator">
+          <input type="button" value="%" onclick="world.value += '%' " class="operator">
+          <input type="button" value="/" onclick="world.value += '/' " class="operator">
+        </div>
+          
+        <div>
+          <input type="button" value="9" onclick="world.value += '9' ">
+          <input type="button" value="8" onclick="world.value += '8' ">
+          <input type="button" value="7" onclick="world.value += '7' ">
+          <input type="button" value="x" onclick="world.value += '*' " class="operator">
+        </div>
+  
+        <div>
+          <input type="button" value="6" onclick="world.value += '6' ">
+          <input type="button" value="5" onclick="world.value += '5' ">
+          <input type="button" value="4" onclick="world.value += '4' ">
+          <input type="button" value="-" onclick="world.value += '-' " class="operator">
+        </div>
+      
+        <div>
+          <input type="button" value="3" onclick="world.value += '3' ">
+          <input type="button" value="2" onclick="world.value += '2' ">
+          <input type="button" value="1" onclick="world.value += '1' ">
+          <input type="button" value="+" onclick="world.value += '+' " class="operator">
+        </div>
+      
+        <div>
+          <input type="button" value="00" onclick="world.value += '00' ">
+          <input type="button" value="0" onclick="world.value += '0' ">
+          <input type="button" value="." onclick="world.value += '.' " class="operator">
+          <input type="button" value="=" onclick="world.value = eval(world.value) " class="operator">
+        </div>
+      
+      </form>
+  
+    </div>
+  
+    </div>
+    
+    
+
+    <script src="calculator.js"></script>
+</body>
+</html>
